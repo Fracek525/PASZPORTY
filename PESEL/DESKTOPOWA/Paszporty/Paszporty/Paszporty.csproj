@@ -9,13 +9,63 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <None Remove="000-odciski.jpg" />
-    <None Remove="000-zdjecie.jpg" />
+    <EmbeddedResource Remove="000-odciski.jpg" />
+    <EmbeddedResource Remove="000-zdjecie.jpg" />
   </ItemGroup>
 
   <ItemGroup>
-    <Resource Include="000-odciski.jpg" />
-    <Resource Include="000-zdjecie.jpg" />
+    <None Remove="Assets\000-odciski.jpg" />
+    <None Remove="Assets\000-zdjecie.jpg" />
+    <None Remove="Assets\111-odciski.jpg" />
+    <None Remove="Assets\111-zdjecie.jpg" />
+    <None Remove="Assets\222-odciski.jpg" />
+    <None Remove="Assets\222-zdjecie.jpg" />
+    <None Remove="Assets\333-odciski.jpg" />
+    <None Remove="Assets\333-zdjecie.jpg" />
+    <None Remove="Assets\brak-odciski.jpg" />
+    <None Remove="Assets\brak-zdjecie.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="000-odciski.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="000-zdjecie.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Assets\000-odciski.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\000-zdjecie.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\111-odciski.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\111-zdjecie.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\222-odciski.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\222-zdjecie.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\333-odciski.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\333-zdjecie.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\brak-odciski.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\brak-zdjecie.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
   </ItemGroup>
 
 </Project>

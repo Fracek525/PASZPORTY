@@ -7,105 +7,91 @@
         mc:Ignorable="d"
         Background="#5F9EA0"
         ResizeMode="NoResize"
-        Title="Wprowadzenie danych do paszportu: 00000000000" Height="400" Width="800">
+        Title="Wprowadzenie danych do paszportu: 00000000000" Width="800" Height="370">
     <Grid>
         <Grid.ColumnDefinitions>
-            <ColumnDefinition></ColumnDefinition>
-            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+            <ColumnDefinition Width="*"></ColumnDefinition>
         </Grid.ColumnDefinitions>
-        <Grid.RowDefinitions>
-            <RowDefinition></RowDefinition>
-        </Grid.RowDefinitions>
 
-        <StackPanel Grid.Row="0" Grid.Column="0">
-            <Grid>
-                <Grid.ColumnDefinitions>
-                    <ColumnDefinition></ColumnDefinition>
-                </Grid.ColumnDefinitions>
-                <Grid.RowDefinitions>
-                    <RowDefinition></RowDefinition>
-                    <RowDefinition></RowDefinition>
-                </Grid.RowDefinitions>
+        <StackPanel  Margin="40" HorizontalAlignment="Center" VerticalAlignment="Center">
+            <StackPanel Orientation="Horizontal" 
+                                    Margin="0 ,0, 0, 15">
+                <TextBlock Width="100">Numer</TextBlock>
+                <TextBox Width="200"
+                                         Background="#F0FFFF"
+                                         x:Name="NumberTextBox"
+                                         LostFocus="NumberTextBox_OnLostFocus"
+                                         ></TextBox>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal"
+                                    Margin="0 ,0, 0, 15">
+                <TextBlock Width="100">Imie</TextBlock>
+                <TextBox Width="200"
+                                         Background="#F0FFFF"
+                                         x:Name="NameTextBox"
+                                         ></TextBox>
+            </StackPanel >
+            <StackPanel Orientation="Horizontal"
+                                    Margin="0 ,0, 0, 40">
+                <TextBlock Width="100">Nazwisko</TextBlock>
+                <TextBox Width="200"
+                                         Background="#F0FFFF"
+                                         x:Name="LastnameTextBox"></TextBox>
+            </StackPanel>
 
-                <StackPanel Grid.Row="0" Grid.Column="0" Margin="30,30,0,0">
-                    <Grid>
-                        <Grid.ColumnDefinitions>
-                            <ColumnDefinition></ColumnDefinition>
-                            <ColumnDefinition></ColumnDefinition>
-                        </Grid.ColumnDefinitions>
-
-                        <Grid.RowDefinitions>
-                            <RowDefinition></RowDefinition>
-                            <RowDefinition></RowDefinition>
-                            <RowDefinition></RowDefinition>
-                        </Grid.RowDefinitions>
-
-                        <TextBlock Grid.Row="0" Grid.Column="0">Numer</TextBlock>
-                        <TextBox Background="#F0FFFF" Grid.Row="0" Grid.ColumnSpan="2" Margin="124,0,30,18" Grid.RowSpan="3"/>
-
-                        <TextBlock Grid.Row="2" Grid.Column="0" Margin="0,15,0,-15">Imię</TextBlock>
-                        <TextBox Background="#F0FFFF" Grid.Row="2" Margin="124,15,30,-15" Grid.ColumnSpan="2"/>
-
-                        <TextBlock Grid.Row="2" Grid.Column="0" Margin="0,49,0,-48">Nazwisko</TextBlock>
-                        <TextBox Background="#F0FFFF" Grid.Row="2" Margin="124,48,30,-48" Grid.ColumnSpan="2"/>
-
-                    </Grid>
+            <Border  BorderBrush="#F0FFFF" 
+                                 BorderThickness="2" 
+                                 CornerRadius="5"
+                                 Padding="20, 10, 0, 10">
+                <StackPanel>
+                    <TextBlock Background="#5F9EA0"
+                                                   Margin="-15, -24, 0, 0"
+                                                   Width="78"
+                                                   Padding="4"
+                                                   HorizontalAlignment="Left"
+                                                   >Kolor oczu</TextBlock>
+                    <RadioButton GroupName="eyeColor"
+                                                     Tag="blue"
+                                                     x:Name="blueColor"
+                                                     >niebieskie</RadioButton>
+                    <RadioButton GroupName="eyeColor"
+                                                     Tag="green"
+                                                     x:Name="greenColor"
+                                                     >zielone</RadioButton>
+                    <RadioButton GroupName="eyeColor"
+                                                     Tag="beer"
+                                                     x:Name="beerColor"
+                                                     >piwne</RadioButton>
                 </StackPanel>
-
-                <Border CornerRadius="5" BorderBrush="White" BorderThickness="2" Grid.Row="1" Grid.Column="0" RenderTransformOrigin="0.503,0.497" Margin="30,100,29,-257">
-                    <StackPanel>
-
-                        <TextBlock Margin="-230,-10,0,0" Background="#5F9EA0" Width="59"><Run Text="Kolor oczu"/></TextBlock>
-
-                        <Grid>
-                            <Grid.ColumnDefinitions>
-                                <ColumnDefinition/>
-                                <ColumnDefinition/>
-                            </Grid.ColumnDefinitions>
-                            <Grid.RowDefinitions>
-                                <RowDefinition/>
-                                <RowDefinition/>
-                                <RowDefinition/>
-                            </Grid.RowDefinitions>
-
-
-                            <RadioButton Grid.Row="2" Grid.Column="0" Margin="54,22,139,-22" Grid.ColumnSpan="2"/>
-                            <TextBlock Grid.Row="2" Margin="79,22,104,-17" Grid.ColumnSpan="2">Niebieskie</TextBlock>
-
-                            <RadioButton Grid.Row="2" Grid.Column="0" Margin="54,62,129,-70" Grid.ColumnSpan="2"/>
-                            <TextBlock Grid.Row="2" Grid.ColumnSpan="2" Margin="79,62,104,-70">Zielone</TextBlock>
-
-                            <RadioButton Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="2" Margin="54,102,129,-102"/>
-                            <TextBlock Grid.Row="2" Grid.ColumnSpan="2" Margin="80,102,104,-102">Piwne</TextBlock>
-                        </Grid>
-                    </StackPanel>
-                </Border>
-
-
-            </Grid>
+            </Border>
         </StackPanel>
+        <StackPanel Grid.Column="1" Margin="20, 20" HorizontalAlignment="Center" VerticalAlignment="Center">
+            <StackPanel Orientation="Horizontal">
+                <Image
+                                        Source="Assets/000-zdjecie.jpg"
+                                        Width="150"
+                                        Height="150"
+                                        Margin="0, 0, 20, 0"
+                                        x:Name="PictureImage"
+                                        />
+                <Image
+                                        Source="Assets/000-zdjecie.jpg"
+                                        Width="150"
+                                        Height="180"
+                                        x:Name="FingerprintImage"
+                                        />
 
-        <StackPanel Grid.Row="0" Grid.Column="1">
-            <Grid Height="381" RenderTransformOrigin="0.507,0.799" Width="384">
-                <Grid.ColumnDefinitions>
-                    <ColumnDefinition></ColumnDefinition>
-                </Grid.ColumnDefinitions>
-                <Grid.RowDefinitions>
-                    <RowDefinition Height="293*"></RowDefinition>
-                    <RowDefinition Height="94*"></RowDefinition>
-                </Grid.RowDefinitions>
+            </StackPanel>
 
-                <StackPanel Grid.Row="0" Grid.Column="0">
-                    <Image Source="/000-zdjecie.jpg" Height="195" Width="181" Margin="-200,30,0,0"></Image>
-                    <Image Source="/000-odciski.jpg" Height="195" Width="181" Margin="200,-195,0,0"/>
-                </StackPanel>
-
-                <StackPanel Grid.Row="1" Grid.Column="0">
-                    <Button Height="38" Width="368" Content="OK"/>
-                </StackPanel>
-
-            </Grid>
+            <Button Background="#F0FFFF" 
+                                Width="300"
+                                HorizontalAlignment="Center"
+                                HorizontalContentAlignment="Center"
+                                Margin="0, 20"
+                                Padding="10"
+                                Click="Submit"
+                                >OK</Button>
         </StackPanel>
-
     </Grid>
 </Window>
