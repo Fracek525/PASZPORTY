@@ -3,12 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\Win10\\OneDrive - Szkola Podstawowa nr 311 w Olsztynie\\Pulpit\\EGZAMINY\\PASZPORTY\\PESEL\\DESKTOPOWA\\Paszporty\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{C8AF866E-F8CF-45F6-8A43-18BC50AAB252}|Paszporty\\Paszporty.csproj|c:\\users\\win10\\onedrive - szkola podstawowa nr 311 w olsztynie\\pulpit\\egzaminy\\paszporty\\pesel\\desktopowa\\paszporty\\paszporty\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{C8AF866E-F8CF-45F6-8A43-18BC50AAB252}|Paszporty\\Paszporty.csproj|solutionrelative:paszporty\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{C8AF866E-F8CF-45F6-8A43-18BC50AAB252}|Paszporty\\Paszporty.csproj|c:\\users\\win10\\onedrive - szkola podstawowa nr 311 w olsztynie\\pulpit\\egzaminy\\paszporty\\pesel\\desktopowa\\paszporty\\paszporty\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C8AF866E-F8CF-45F6-8A43-18BC50AAB252}|Paszporty\\Paszporty.csproj|solutionrelative:paszporty\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C8AF866E-F8CF-45F6-8A43-18BC50AAB252}|Paszporty\\Paszporty.csproj|c:\\users\\win10\\onedrive - szkola podstawowa nr 311 w olsztynie\\pulpit\\egzaminy\\paszporty\\pesel\\desktopowa\\paszporty\\paszporty\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{C8AF866E-F8CF-45F6-8A43-18BC50AAB252}|Paszporty\\Paszporty.csproj|solutionrelative:paszporty\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,31 +18,32 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "MainWindow.xaml",
               "DocumentMoniker": "C:\\Users\\Win10\\OneDrive - Szkola Podstawowa nr 311 w Olsztynie\\Pulpit\\EGZAMINY\\PASZPORTY\\PESEL\\DESKTOPOWA\\Paszporty\\Paszporty\\MainWindow.xaml",
               "RelativeDocumentMoniker": "Paszporty\\MainWindow.xaml",
-              "ToolTip": "C:\\Users\\Win10\\OneDrive - Szkola Podstawowa nr 311 w Olsztynie\\Pulpit\\EGZAMINY\\PASZPORTY\\PESEL\\DESKTOPOWA\\Paszporty\\Paszporty\\MainWindow.xaml*",
-              "RelativeToolTip": "Paszporty\\MainWindow.xaml*",
+              "ToolTip": "C:\\Users\\Win10\\OneDrive - Szkola Podstawowa nr 311 w Olsztynie\\Pulpit\\EGZAMINY\\PASZPORTY\\PESEL\\DESKTOPOWA\\Paszporty\\Paszporty\\MainWindow.xaml",
+              "RelativeToolTip": "Paszporty\\MainWindow.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
               "WhenOpened": "2025-01-14T14:27:45.632Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "MainWindow.xaml.cs",
               "DocumentMoniker": "C:\\Users\\Win10\\OneDrive - Szkola Podstawowa nr 311 w Olsztynie\\Pulpit\\EGZAMINY\\PASZPORTY\\PESEL\\DESKTOPOWA\\Paszporty\\Paszporty\\MainWindow.xaml.cs",
               "RelativeDocumentMoniker": "Paszporty\\MainWindow.xaml.cs",
-              "ToolTip": "C:\\Users\\Win10\\OneDrive - Szkola Podstawowa nr 311 w Olsztynie\\Pulpit\\EGZAMINY\\PASZPORTY\\PESEL\\DESKTOPOWA\\Paszporty\\Paszporty\\MainWindow.xaml.cs",
-              "RelativeToolTip": "Paszporty\\MainWindow.xaml.cs",
-              "ViewState": "AgIAAAsAAAAAAAAAAAAawBgAAAAIAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\Win10\\OneDrive - Szkola Podstawowa nr 311 w Olsztynie\\Pulpit\\EGZAMINY\\PASZPORTY\\PESEL\\DESKTOPOWA\\Paszporty\\Paszporty\\MainWindow.xaml.cs*",
+              "RelativeToolTip": "Paszporty\\MainWindow.xaml.cs*",
+              "ViewState": "AgIAABUAAAAAAAAAAAAqwCcAAABSAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-14T14:27:43.757Z"
+              "WhenOpened": "2025-01-14T14:27:43.757Z",
+              "EditorCaption": ""
             }
           ]
         }
