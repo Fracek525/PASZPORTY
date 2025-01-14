@@ -6,7 +6,8 @@
         xmlns:local="clr-namespace:Paszporty"
         mc:Ignorable="d"
         Background="#5F9EA0"
-        Title="Wprowadzenie danych do paszportu: 00000000000" Height="450" Width="800">
+        ResizeMode="NoResize"
+        Title="Wprowadzenie danych do paszportu: 00000000000" Height="400" Width="800">
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition></ColumnDefinition>
@@ -51,7 +52,7 @@
                     </Grid>
                 </StackPanel>
 
-                <Border CornerRadius="5" BorderBrush="White" BorderThickness="2" Grid.Row="1" Grid.Column="0" RenderTransformOrigin="0.503,0.497" Margin="30,160,29,-319">
+                <Border CornerRadius="5" BorderBrush="White" BorderThickness="2" Grid.Row="1" Grid.Column="0" RenderTransformOrigin="0.503,0.497" Margin="30,100,29,-257">
                     <StackPanel>
 
                         <TextBlock Margin="-230,-10,0,0" Background="#5F9EA0" Width="59"><Run Text="Kolor oczu"/></TextBlock>
@@ -68,11 +69,11 @@
                             </Grid.RowDefinitions>
 
 
-                            <RadioButton Grid.Row="2" Grid.Column="0" Margin="54,19,139,-19" Grid.ColumnSpan="2"/>
-                            <TextBlock Grid.Row="2" Margin="79,14,104,-14" Grid.ColumnSpan="2">Niebieskie</TextBlock>
+                            <RadioButton Grid.Row="2" Grid.Column="0" Margin="54,22,139,-22" Grid.ColumnSpan="2"/>
+                            <TextBlock Grid.Row="2" Margin="79,22,104,-17" Grid.ColumnSpan="2">Niebieskie</TextBlock>
 
-                            <RadioButton Grid.Row="2" Grid.Column="0" Margin="54,58,129,-66" Grid.ColumnSpan="2"/>
-                            <TextBlock Grid.Row="2" Grid.ColumnSpan="2" Margin="79,57,104,-65">Zielone</TextBlock>
+                            <RadioButton Grid.Row="2" Grid.Column="0" Margin="54,62,129,-70" Grid.ColumnSpan="2"/>
+                            <TextBlock Grid.Row="2" Grid.ColumnSpan="2" Margin="79,62,104,-70">Zielone</TextBlock>
 
                             <RadioButton Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="2" Margin="54,102,129,-102"/>
                             <TextBlock Grid.Row="2" Grid.ColumnSpan="2" Margin="80,102,104,-102">Piwne</TextBlock>
@@ -80,6 +81,28 @@
                     </StackPanel>
                 </Border>
 
+
+            </Grid>
+        </StackPanel>
+
+        <StackPanel Grid.Row="0" Grid.Column="1">
+            <Grid Height="381" RenderTransformOrigin="0.507,0.799" Width="384">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="293*"></RowDefinition>
+                    <RowDefinition Height="94*"></RowDefinition>
+                </Grid.RowDefinitions>
+
+                <StackPanel Grid.Row="0" Grid.Column="0">
+                    <Image Source="/000-zdjecie.jpg" Height="195" Width="181" Margin="-200,30,0,0"></Image>
+                    <Image Source="/000-odciski.jpg" Height="195" Width="181" Margin="200,-195,0,0"/>
+                </StackPanel>
+
+                <StackPanel Grid.Row="1" Grid.Column="0">
+                    <Button Height="38" Width="368" Content="OK"/>
+                </StackPanel>
 
             </Grid>
         </StackPanel>
