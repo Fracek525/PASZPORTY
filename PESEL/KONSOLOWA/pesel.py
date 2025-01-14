@@ -20,7 +20,8 @@ def Sumowanie(pesel):
     else:
         return False
 
-SprawdzeniePlci([5,5,0,3,0,1,0,1,1,9,3])
-Sumowanie([5,5,0,3,0,1,0,1,1,9,3])
+if (__name__=="__main__"):
+    SprawdzeniePlci([5,5,0,3,0,1,0,1,1,9,3])
+    Sumowanie([5,5,0,3,0,1,0,1,1,9,3])
 
 
