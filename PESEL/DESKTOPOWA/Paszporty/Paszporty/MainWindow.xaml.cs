@@ -1,4 +1,5 @@
-﻿using System.Text;
+﻿using System.Collections.ObjectModel;
+using System.Text;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Data;
@@ -31,7 +32,6 @@ namespace Paszporty
 
             try
             {
-                // Załaduj obraz odcisków palców
                 BitmapImage fingerprintBitmap = new BitmapImage();
                 fingerprintBitmap.BeginInit();
                 fingerprintBitmap.UriSource = new Uri(fingerprintName, UriKind.Relative);
@@ -40,7 +40,6 @@ namespace Paszporty
             }
             catch
             {
-                // Jeśli obraz nie istnieje, możesz ustawić domyślny obraz lub zostawić pusty
                 FingerprintImage.Source = null;
             }
 
@@ -55,13 +54,40 @@ namespace Paszporty
             }
             catch
             {
-                // Jeśli obraz nie istnieje, możesz ustawić domyślny obraz lub zostawić pusty
                 PictureImage.Source = null;
             }
         }
 
         private void Submit(Object sender , EventArgs e)
         {
+            var name = NameTextBox.Text ?? "";
+            var surname = LastnameTextBox.Text ?? "";
+            var eyeColorText = "";
+
+            bool radioButtonChecked;
+
+            if (beerColor.IsChecked ?? false)
+            {
+                eyeColorText = "piwny";
+            }
+            if (blueColor.IsChecked ?? false)
+            {
+                eyeColorText = "niebieski";
+            }
+            if (greenColor.IsChecked ?? false)
+            {
+                eyeColorText = "zielony";
+            }
+
+            if (name == "" || surname == "" || eyeColorText == "")
+            {
+                MessageBox.Show("Wprowadź dane");
+            }
+            else
+            {
+                MessageBox.Show($"{name}, {surname}, kolor oczu: {eyeColorText}");
+            }
+            
 
         }
         
